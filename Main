@@ -1,0 +1,315 @@
+import textwrap
+
+A='0100-0001' # 65
+B='0100-0010' # 66
+C='0100-0011' # 67
+D='0100-0100' # 68
+E='0100-0101' # 69
+F='0100-0110' # 70
+G='0100-0111' # 71
+H='0100-1000' # 72
+I='0100-1001' # 73
+J='0100-1010' # 74
+K='0100-1011' # 75
+L='0100-1100' # 76
+M='0100-1101' # 77
+N='0100-1110' # 78
+O='0100-1111' # 79
+P='0101-0000' # 80
+Q='0101-0001' # 81
+R='0101-0010' # 82
+S='0101-0011' # 83
+T='0101-0100' # 84
+U='0101-0101' # 85
+V='0101-0110' # 86
+W='0101-0111' # 87
+X='0101-1000' # 88
+Y='0101-1001' # 89
+Z='0101-1010' # 90
+
+a='0110-0001' # 97
+b='0110-0010' # 98
+c='0110-0011' # 99
+d='0110-0100' # 100
+e='0110-0101' # 101
+f='0110-0110' # 102
+g='0110-0111' # 103
+h='0110-1000' # 104
+i='0110-1001' # 105
+j='0110-1010' # 106
+k='0110-1011' # 107
+l='0110-1100' # 108
+m='0110-1101' # 109
+n='0110-1110' # 110
+o='0110-1111' # 111
+p='0111-0000' # 112
+q='0111-0001' # 113
+r='0111-0010' # 114
+s='0111-0011' # 115
+t='0111-0100' # 116
+u='0111-0101' # 117
+v='0111-0110' # 118
+w='0111-0111' # 119
+x='0111-1000' # 120
+y='0111-1001' # 121
+z='0111-1010' # 122
+
+choice=input('1: To Binary   2: From Binary  ')
+if choice=='1':
+  print()
+
+  print('What are you converting to Binary?')
+  print()
+  converting=input()
+  final=''
+
+  for convert in converting:
+    temp=convert
+
+    if convert=='A':
+      temp=A
+    elif convert=='B':
+      temp=B
+    elif convert=='C':
+      temp=C
+    elif convert=='D':
+      temp=D
+    elif convert=='E':
+      temp=E
+    elif convert=='F':
+      temp=F
+    elif convert=='G':
+      temp=G
+    elif convert=='H':
+      temp=H
+    elif convert=='I':
+      temp=I
+    elif convert=='J':
+      temp=J
+    elif convert=='K':
+      temp=K
+    elif convert=='L':
+      temp=L
+    elif convert=='M':
+      temp=M
+    elif convert=='N':
+      temp=N
+    elif convert=='O':
+      temp=O
+    elif convert=='P':
+      temp=P
+    elif convert=='Q':
+      temp=Q
+    elif convert=='R':
+      temp=R
+    elif convert=='S':
+      temp=S
+    elif convert=='T':
+      temp=T
+    elif convert=='U':
+      temp=U
+    elif convert=='V':
+      temp=V
+    elif convert=='W':
+      temp=W
+    elif convert=='X':
+      temp=X
+    elif convert=='Y':
+      temp=Y
+    elif convert=='Z':
+      temp=Z
+    elif convert=='a':
+      temp=a
+    elif convert=='b':
+      temp=b
+    elif convert=='c':
+      temp=c
+    elif convert=='d':
+      temp=d
+    elif convert=='e':
+      temp=e
+    elif convert=='f':
+      temp=f
+    elif convert=='g':
+      temp=g
+    elif convert=='h':
+      temp=h
+    elif convert=='i':
+      temp=i
+    elif convert=='j':
+      temp=j
+    elif convert=='k':
+      temp=k
+    elif convert=='l':
+      temp=l
+    elif convert=='m':
+      temp=m
+    elif convert=='n':
+      temp=n
+    elif convert=='o':
+      temp=o
+    elif convert=='p':
+      temp=p
+    elif convert=='q':
+      temp=q
+    elif convert=='r':
+      temp=r
+    elif convert=='s':
+      temp=s
+    elif convert=='t':
+      temp=t
+    elif convert=='u':
+      temp=u
+    elif convert=='v':
+      temp=v
+    elif convert=='w':
+      temp=w
+    elif convert=='x':
+      temp=x
+    elif convert=='y':
+      temp=y
+    elif convert=='z':
+      temp=z
+    elif convert==' ':
+      temp='0010-0000'
+    elif convert=='.':
+      temp='0010-1110'
+    elif convert==',':
+      temp='0010-1100'
+    elif convert=='!':
+      temp='0010-0001'
+    
+    final=final+convert.replace(convert,temp)
+
+  print()
+  print('The Binary equal is:')
+  final=final.replace('-','')
+  print(final)
+elif choice=='2':
+  print()
+  print('What are you converting?')
+  print()
+  convert=input('')
+  reverse=textwrap.wrap(convert, 8)
+  temp=0
+  final=''
+  for item in reverse:
+    var=reverse[temp]
+    temp=temp+1
+    if var=='01000001':
+      var='A'
+    elif var=='01000010':
+      var='B'
+    elif var=='01000011':
+      var='C'
+    elif var=='01000100':
+      var='D'
+    elif var=='01000101':
+      var='E'
+    elif var=='01000110':
+      var='F'
+    elif var=='01000111':
+      var='G'
+    elif var=='01001000':
+      var='H'
+    elif var=='01001001':
+      var='I'
+    elif var=='01001010':
+      var='J'
+    elif var=='01001011':
+      var='K'
+    elif var=='01001100':
+      var='L'
+    elif var=='01001101':
+      var='M'
+    elif var=='01001110':
+      var='N'
+    elif var=='01001111':
+      var='O'
+    elif var=='01010000':
+      var='P'
+    elif var=='01010001':
+      var='Q'
+    elif var=='01010010':
+      var='R'
+    elif var=='01010011':
+      var='S'
+    elif var=='01010100':
+      var='T'
+    elif var=='01010101':
+      var='U'
+    elif var=='01010110':
+      var='V'
+    elif var=='01010111':
+      var='W'
+    elif var=='01011000':
+      var='X'
+    elif var=='01011001':
+      var='Y'
+    elif var=='01011010':
+      var='Z'
+    elif var=='01100001':
+      var='a'
+    elif var=='01100010':
+      var='b'
+    elif var=='01100011':
+      var='c'
+    elif var=='01100100':
+      var='d'
+    elif var=='01100101':
+      var='e'
+    elif var=='01100110':
+      var='f'
+    elif var=='01100111':
+      var='g'
+    elif var=='01101000':
+      var='h'
+    elif var=='01101001':
+      var='i'
+    elif var=='01101010':
+      var='j'
+    elif var=='01101011':
+      var='k'
+    elif var=='01101100':
+      var='l'
+    elif var=='01101101':
+      var='m'
+    elif var=='01101110':
+      var='n'
+    elif var=='01101111':
+      var='o'
+    elif var=='01110000':
+      var='p'
+    elif var=='01110001':
+      var='q'
+    elif var=='01110010':
+      var='r'
+    elif var=='01110011':
+      var='s'
+    elif var=='01110100':
+      var='t'
+    elif var=='01110101':
+      var='u'
+    elif var=='01110110':
+      var='v'
+    elif var=='01110111':
+      var='w'
+    elif var=='01111000':
+      var='x'
+    elif var=='01111001':
+      var='y'
+    elif var=='01111010':
+      var='z'
+    elif var=='00100000':
+      var=' '
+    elif var=='00101110':
+      var='.'
+    elif var=='00101100':
+      var=','
+    elif var=='00100001':
+      var='!'
+    final=final+var
+  print()
+  print('Normal text is:')
+  print()
+  print(final)
